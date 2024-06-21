@@ -21,6 +21,16 @@ This project aims to recommend job openings to candidates based on the similarit
 - scikit-learn
 - pandas
 
+## Explanation of Methods Used in Candidate Matching Project
+
+### 1. Text Extraction from PDF:
+
+Library: PyMuPDF (fitz).
+Function: extract_text_from_pdf(pdf_path)
+Input: Path to the PDF file.
+Process: Opens the PDF and iterates through each page, extracting the text.
+Output: Combined text from all pages in the PDF.
+
 ## Installation
 
 1. **Clone the repository**:
