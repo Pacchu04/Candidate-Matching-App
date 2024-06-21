@@ -1,0 +1,4 @@
+Flask==2.3.2
+pandas==1.5.3
+PyMuPDF==1.21.1
+scikit-learn==1.2.2
