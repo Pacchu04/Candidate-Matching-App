@@ -65,10 +65,6 @@ This project aims to recommend job openings to candidates based on the similarit
 
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Acknowledgments
 
 - Inspired by various job matching and recommendation systems.
