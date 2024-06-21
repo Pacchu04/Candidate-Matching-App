@@ -25,7 +25,7 @@ This project aims to recommend job openings to candidates based on the similarit
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/candidate-job-matching.git
+    git clone https://github.com/Pacchu04/Candidate-Matching-App.git
     cd candidate-job-matching
     ```
 
