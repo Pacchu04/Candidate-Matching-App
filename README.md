@@ -71,6 +71,15 @@ This project aims to recommend job openings to candidates based on the similarit
    - Deletes the temporary file.
    - Renders the results page with matched jobs.
 
+## Features and Results:
+
+### 1. Home Page
+![image](https://github.com/Pacchu04/Candidate-Matching-App/assets/92878457/3f1ed005-d623-458c-b823-ef29a169a4da)
+
+### 2. Result 
+![image](https://github.com/Pacchu04/Candidate-Matching-App/assets/92878457/7cccd2d8-76d9-4438-b86e-db91aa5c3a16)
+
+
 ## Installation
 
 1. **Clone the repository**:
