@@ -59,6 +59,18 @@ This project aims to recommend job openings to candidates based on the similarit
    5. Sort jobs by similarity score.
 * Output: DataFrame of matched jobs with relevant details and similarity scores.
 
+### 5. Flask Web Application:
+
+* Library: Flask.
+* Route: upload_file()
+* GET Method: Renders the file upload page.
+* POST Method:
+   - Handles file upload.
+   - Saves the uploaded file temporarily.
+   - Calls recommend_jobs to process the file and get matched jobs.
+   - Deletes the temporary file.
+   - Renders the results page with matched jobs.
+
 ## Installation
 
 1. **Clone the repository**:
