@@ -31,6 +31,34 @@ This project aims to recommend job openings to candidates based on the similarit
  * Process: Opens the PDF and iterates through each page, extracting the text.
  * Output: Combined text from all pages in the PDF.
 
+### 2. TF-IDF Vectorization:
+
+* Library: scikit-learn (TfidfVectorizer).
+* Function: Part of the recommend_jobs function.
+* Input: Job descriptions from the dataset and candidate resume text.
+* Process: Converts text data into numerical vectors using TF-IDF (Term Frequency-Inverse Document Frequency) to reflect the importance of terms.
+* Output: Numerical vectors representing job descriptions and candidate resume.
+
+### 3. Cosine Similarity Calculation:
+
+* Library: scikit-learn (cosine_similarity).
+* Function: Part of the recommend_jobs function.
+* Input: TF-IDF vectors of job descriptions and candidate resume.
+* Process: Calculates the cosine similarity between the candidate resume vector and each job description vector.
+* Output: Similarity scores.
+
+### 4. Job Matching Based on Preferences and Similarity:
+
+* Function: recommend_jobs(candidate_resume_path, jobs_df, candidate_preferences)
+* Input: Path to the candidate resume, job openings dataset, and candidate preferences.
+* Process:
+   1. Extract text from the resume.
+   2. Vectorize job descriptions and resume text.
+   3. Calculate similarity scores.
+   4. Filter jobs based on location and similarity threshold.
+   5. Sort jobs by similarity score.
+   6. Output: DataFrame of matched jobs with relevant details and similarity scores.
+
 ## Installation
 
 1. **Clone the repository**:
