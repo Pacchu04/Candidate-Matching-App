@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+</head>
+<body>
+    <h1>Your Profile Matched with below Job openings</h1>
+    {% for table in tables %}
+        {% if loop.first %}
+        <h2>Job Recommendation</h2>
+        {% endif %}
+        {{ table|safe }}
+    {% endfor %}
+    <script>
+        $(document).ready( function () {
+            $('.data').DataTable();
+        } );
+    </script>
+</body>
+</html>

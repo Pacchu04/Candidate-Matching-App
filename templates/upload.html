@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Matching</title>
+    <style>
+        body {
+            background-color: #1f2937; /* Tailwind's bg-gray-900 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+        }
+        .header {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        h1, h2, p {
+            color: #eff4fa; /* Tailwind's text-gray-100 */
+        }
+        .inline-flex {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            border-radius: 0.375rem; /* Tailwind's rounded-md */
+            font-size: 0.875rem; /* Tailwind's text-sm */
+            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+            transition-duration: 150ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 0.5rem 1rem; /* Tailwind's h-10 px-4 */
+            background-color: #ea580c; /* Tailwind's bg-orange-500 */
+            color: #fff; /* Tailwind's text-white */
+            font-weight: 700; /* Tailwind's font-bold */
+            height: 2 rem;
+             
+            cursor: pointer;
+        }
+        .inline-flex:hover {
+            background-color: #c2410c; /* Tailwind's hover:bg-orange-600 */
+        }
+        .inline-flex:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            box-shadow: 0 0 0 2px #ea580c; /* Tailwind's focus-visible:ring-2 focus-visible:ring-orange-500 */
+        }
+        .inline-flex:disabled {
+            pointer-events: none;
+            opacity: 0.5; /* Tailwind's disabled:pointer-events-none disabled:opacity-50 */
+        }
+        .file-input {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="text-24 font-extrabold text-white">Candidate Matching App</h1>
+        <h2 class="text-center mt-4">Upload Resume</h2>
+    </div>
+    <div class="content">
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="file-input inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 bg-orange-1 py-4 font-bold text-white-1">
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 bg-orange-1 py-4 font-bold text-white-1" type="submit">Submit</button>
+        </form>
+    </div>
+    <div>
+        <img src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1716357077/o1imiun4wwcpia9uucgs.gif" alt="App screenshot" width="300" height="300" class="w-[15rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
+    </div>
+</body>
+</html>
