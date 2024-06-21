@@ -57,7 +57,7 @@ This project aims to recommend job openings to candidates based on the similarit
    3. Calculate similarity scores.
    4. Filter jobs based on location and similarity threshold.
    5. Sort jobs by similarity score.
-   6. Output: DataFrame of matched jobs with relevant details and similarity scores.
+* Output: DataFrame of matched jobs with relevant details and similarity scores.
 
 ## Installation
 
